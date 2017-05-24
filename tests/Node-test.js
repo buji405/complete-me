@@ -1,12 +1,12 @@
 import { expect } from 'chai';
 import Node from '../scripts/Node.js';
-import Trie from '../scripts/Trie.js';
+
 
 describe('Node', () => {
   let newNode;
 
   beforeEach(() => {
-   newNode = new Node();
+    newNode = new Node();
   })
   it('should instantiate a new node', () => {
     expect(newNode).to.be.an.instanceof(Node)

@@ -11,8 +11,8 @@ describe('Trie', () => {
   let newNode;
 
   beforeEach(() => {
-   newTrie = new Trie();
-   newNode = new Node();
+    newTrie = new Trie();
+    newNode = new Node();
   })
 
   it('should instantiate a new Trie', () => {
@@ -54,9 +54,9 @@ describe('Trie', () => {
   })
 
   it('should populate all words from dictionary', () =>{
-      newTrie.populate(dictionary)
+    newTrie.populate(dictionary)
 
-      expect(newTrie.count()).to.equal(235886);
+    expect(newTrie.count()).to.equal(235886);
   })
 
   it.only('should be able to suggest all words in dictionary similar to word passed in', () => {
@@ -73,7 +73,7 @@ describe('Trie', () => {
     newTrie.select('aardvark')
 
 
-     expect(newTrie.suggest('piz')).to.deep.equal(["pizzle", "pizzeria", "pizza", "pize", "pizzicato"])
+    expect(newTrie.suggest('piz')).to.deep.equal(["pizzle", "pizzeria", "pizza", "pize", "pizzicato"])
   })
 
 
