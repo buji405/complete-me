@@ -10,7 +10,7 @@
     "test": "mocha --compilers js:babel-core/register tests"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ciara Bujanos",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.22.2",
