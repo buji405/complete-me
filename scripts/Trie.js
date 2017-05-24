@@ -72,27 +72,6 @@ class Trie {
     console.log('pS:', possibleSolutions);
     return possibleSolutions;
   }
-// ca ndy
-// ca lifornia
-// ciara
-
-// prefix =[]
-// findWords(c<node>)
-
-    // prefix =[i]
-    // findWords(i<node>)
-
-        // prefix =[i, a]
-        // findWords(a<node>)
-
-            // prefix =[i, a, r]
-            // findWords(r<node>)
-
-                // prefix =[]
-
-            // prefix = [i, a, r]
-        // prefix = [i, a]
-
 
   populate(array) {
     array.forEach((word) => {
