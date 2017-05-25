@@ -26,7 +26,6 @@ class Trie {
   }
 
   suggest(string) {
-
     let stringArray = string.toLowerCase().split('');
     let current = this.root;
 
@@ -54,13 +53,11 @@ class Trie {
       possibleSolutions.push(prefix.join(''));
     }
     let nodeChildrenKeys = Object.keys(node.children);
-    
+
     nodeChildrenKeys.forEach((letter) => {
-      prefix.push(node.children[letter].letter);
+      prefix.push(letter);
       this.findWords(node.children[letter], prefix, possibleSolutions);
-
       prefix.pop();
-
     })
     return possibleSolutions;
   }
